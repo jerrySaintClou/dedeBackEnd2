@@ -22,7 +22,9 @@ public class Avis {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String titre;
     private String message;
+    private float note;
     private String statut;
     @ManyToOne
     private Utilisateur utilisateur;

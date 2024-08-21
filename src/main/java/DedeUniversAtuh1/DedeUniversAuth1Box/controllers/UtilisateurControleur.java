@@ -29,7 +29,9 @@ import static java.time.temporal.ChronoUnit.MINUTES;
 @Slf4j
 @AllArgsConstructor
 @RestController
-@RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+//@RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping("api/utilisateur")
+@CrossOrigin(origins = "http://127.0.0.1:5173")
 public class UtilisateurControleur {
 
     private AuthenticationManager authenticationManager;

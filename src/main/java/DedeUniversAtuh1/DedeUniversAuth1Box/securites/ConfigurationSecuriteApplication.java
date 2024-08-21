@@ -43,9 +43,9 @@ public class ConfigurationSecuriteApplication{
                         .authorizeHttpRequests(
                                 authorize ->
                                         authorize
-                                                .requestMatchers(POST,"/inscription").permitAll()
-                                                .requestMatchers(POST,"/activation").permitAll()
-                                                .requestMatchers(POST,"/connexion").permitAll()
+                                                .requestMatchers(POST,"api/utilisateur/inscription").permitAll()
+                                                .requestMatchers(POST,"api/utilisateur/activation").permitAll()
+                                                .requestMatchers(POST,"api/utilisateur/connexion").permitAll()
                                                 .requestMatchers(POST,"/refresh-token").permitAll()
                                                 .requestMatchers(POST,"/modifier-mot-de-passe").permitAll()
                                                 .requestMatchers(POST,"/nouveau-mot-de-passe").permitAll()
