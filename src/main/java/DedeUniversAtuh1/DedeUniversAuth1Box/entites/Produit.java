@@ -40,6 +40,9 @@ public class Produit {
 
     @ManyToOne
     private SousCategorie sousCategorie;
+
+    @ManyToOne
+    private Avis avis;
 //
 //    public SousCategorie getSousCategorie() {
 //        return sousCategorie;
@@ -126,4 +129,11 @@ public class Produit {
 //        this.imageProduits = imageProduits;
 //    }
 
+    public Avis getAvis() {
+        return avis;
+    }
+
+    public void setAvis(Avis avis) {
+        this.avis = avis;
+    }
 }
